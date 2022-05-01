@@ -27,5 +27,5 @@ git clone https://github.com/paoscript/Front-End_Adonix.git
 
 
 
-En caso de terner dudas por favor ponerse en contacto.
+En caso de tener dudas por favor ponerse en contacto.
 
