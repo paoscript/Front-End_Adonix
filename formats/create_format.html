@@ -34,9 +34,9 @@
         <!-- partial:partials/_navbar.html -->
         <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
             <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-                <a class="navbar-brand brand-logo mr-5" href="../main.html"><img
+                <a class="navbar-brand brand-logo mr-5" href="../index.html"><img
                         src="../images/logo-teleperformance.png" class="mr-2" alt="logo" /></a>
-                <a class="navbar-brand brand-logo-mini" href="../main.html"><img
+                <a class="navbar-brand brand-logo-mini" href="../index.html"><img
                         src="../images/minilogo_teleperformance.png" alt="logo" /></a>
             </div>
             <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
@@ -108,11 +108,14 @@
                         </a>
                         <div class="collapse" id="ui-basic">
                             <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="../apprentices/create_apprentice.html">Create</a>
+                                <li class="nav-item"> <a class="nav-link"
+                                        href="../apprentices/create_apprentice.html">Create</a>
                                 </li>
-                                <li class="nav-item"> <a class="nav-link" href="../apprentices/consult_apprentice.html">Consult</a>
+                                <li class="nav-item"> <a class="nav-link"
+                                        href="../apprentices/consult_apprentice.html">Consult</a>
                                 </li>
-                                <li class="nav-item"> <a class="nav-link" href="../apprentices/bulk_load_apprentice.html">Bulk
+                                <li class="nav-item"> <a class="nav-link"
+                                        href="../apprentices/bulk_load_apprentice.html">Bulk
                                         Load</a></li>
                             </ul>
                         </div>
@@ -139,7 +142,8 @@
                         </a>
                         <div class="collapse" id="form-elements">
                             <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"><a class="nav-link" href="../modifications/create_modification.html">Create</a>
+                                <li class="nav-item"><a class="nav-link"
+                                        href="../modifications/create_modification.html">Create</a>
                                 </li>
                                 <li class="nav-item"><a class="nav-link"
                                         href="../modifications/consult_modification.html">Consult</a></li>
@@ -158,8 +162,10 @@
                         </a>
                         <div class="collapse" id="charts">
                             <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="../formats/create_format.html">Create</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="../formats/consult_format.html">Consult</a>
+                                <li class="nav-item"> <a class="nav-link"
+                                        href="../formats/create_format.html">Create</a></li>
+                                <li class="nav-item"> <a class="nav-link"
+                                        href="../formats/consult_format.html">Consult</a>
                                 </li>
                             </ul>
                         </div>
@@ -176,7 +182,8 @@
                         </a>
                         <div class="collapse" id="tables">
                             <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="../institutions/create_institution.html">Create</a>
+                                <li class="nav-item"> <a class="nav-link"
+                                        href="../institutions/create_institution.html">Create</a>
                                 </li>
                                 <li class="nav-item"> <a class="nav-link"
                                         href="../institutions/consult_institution.html">Consult</a></li>
@@ -214,9 +221,11 @@
                         </a>
                         <div class="collapse" id="auth">
                             <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="../feedbacks/create_feedback.html"> Create </a>
+                                <li class="nav-item"> <a class="nav-link" href="../feedbacks/create_feedback.html">
+                                        Create </a>
                                 </li>
-                                <li class="nav-item"> <a class="nav-link" href="../feedbacks/consult_feedback.html"> Consult </a>
+                                <li class="nav-item"> <a class="nav-link" href="../feedbacks/consult_feedback.html">
+                                        Consult </a>
                                 </li>
                             </ul>
                         </div>
@@ -233,8 +242,10 @@
                         </a>
                         <div class="collapse" id="users">
                             <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="../users/create_user.html"> Create </a></li>
-                                <li class="nav-item"> <a class="nav-link" href="../users/consult_user.html"> Consult </a>
+                                <li class="nav-item"> <a class="nav-link" href="../users/create_user.html"> Create </a>
+                                </li>
+                                <li class="nav-item"> <a class="nav-link" href="../users/consult_user.html"> Consult
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -261,301 +272,126 @@
             <!-- partial -->
 
             <div class="main-panel">
-                <!-- Formulario -->
-                <div class="col-12 grid-margin">
-                    <div class="card">
-                        <div class="card-body">
-                            <h4 class="card-title">Create a new apprentice</h4>
-                            <form class="form-sample" novalidate>
-                                <p class="card-description">
-                                    Please fill in the following information 📝
-                                </p>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">Identification</label>
-                                            <div class="col-sm-9">
-                                                <input type="text" class="form-control" placeholder="CC or TI" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">ID CCMS</label>
-                                            <div class="col-sm-9">
-                                                <input type="number" class="form-control" placeholder="Number ID"
-                                                    id="idCcms" required />
-                                            </div>
-                                            <div class="invalid-feedback">
-                                                Please provide a valid city.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">Name</label>
-                                            <div class="col-sm-9">
-                                                <input type="text" class="form-control" placeholder="Complete name" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">Group</label>
-                                            <div class="col-sm-9">
-                                                <input type="number" class="form-control" placeholder="Number" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">SGVA</label>
-                                            <div class="col-sm-9">
-                                                <select class="form-control">
-                                                    <option>Yes</option>
-                                                    <option>No</option>
-                                                    <option>Pending</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">CECO</label>
-                                            <div class="col-sm-9">
-                                                <input type="number" class="form-control" placeholder="Number" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">Job Description</label>
-                                            <div class="col-sm-9">
-                                                <input type="text" class="form-control" placeholder="Description" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">Related Position</label>
-                                            <div class="col-sm-9">
-                                                <input type="text" class="form-control" placeholder="Related" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">Payment</label>
-                                            <div class="col-sm-9">
-                                                <input type="number" class="form-control" placeholder="$ SMLV" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">BirthDay</label>
-                                            <div class="col-sm-9">
-                                                <input type="date" class="form-control" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">Address</label>
-                                            <div class="col-sm-9">
-                                                <input type="text" class="form-control" placeholder="Address" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">E-Mail</label>
-                                            <div class="col-sm-9">
-                                                <input type="email" class="form-control" placeholder="E-mail" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">EPS</label>
-                                            <div class="col-sm-9">
-                                                <input type="text" class="form-control" placeholder="EPS" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">City</label>
-                                            <div class="col-sm-9">
-                                                <input type="text" class="form-control" placeholder="City" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">Institutions</label>
-                                            <div class="col-sm-9">
-                                                <input type="text" class="form-control" placeholder="Institutions" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">Specility</label>
-                                            <div class="col-sm-9">
-                                                <input type="text" class="form-control" placeholder="Specility" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">Name Boss</label>
-                                            <div class="col-sm-9">
-                                                <input type="text" class="form-control" placeholder="Direct Boss" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">ID CCMS Boss</label>
-                                            <div class="col-sm-9">
-                                                <input type="number" class="form-control" placeholder=" ID CCMS Boss" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">Category</label>
-                                            <div class="col-sm-9">
-                                                <select class="form-control">
-                                                    <option>Technical</option>
-                                                    <option>Technologist</option>
-                                                    <option>Professional</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">Yielded</label>
-                                            <div class="col-sm-9">
-                                                <select class="form-control">
-                                                    <option>Yes</option>
-                                                    <option>No</option>
-                                                    <option>Studing</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">State</label>
-                                            <div class="col-sm-9">
-                                                <select class="form-control">
-                                                    <option>Lective</option>
-                                                    <option>Productive</option>
-                                                    <option>University</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">Contract Start Date</label>
-                                            <div class="col-sm-9">
-                                                <input type="date" class="form-control" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">Contract Start Date</label>
-                                            <div class="col-sm-9">
-                                                <input type="date" class="form-control" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">End Date Of Study</label>
-                                            <div class="col-sm-9">
-                                                <input type="date" class="form-control" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">Productive Start Date</label>
-                                            <div class="col-sm-9">
-                                                <input type="date" class="form-control" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">Productive End Date</label>
-                                            <div class="col-sm-9">
-                                                <input type="date" class="form-control" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">Count Days</label>
-                                            <div class="col-sm-9">
-                                                <input type="number" class="form-control" disabled />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                <!-- Vista Cargue Masivo-->
 
-                                <div class="row ">
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <div class="container p-10">
-                                                <button type="button" class="btn btn-danger">Cancel</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <div class="container p-10">
-                                            <button type="submit" class="btn btn-success">Submit</button>
-                                        </div>
-                                    </div>
+                <br>
+                <h3>Create Formats</h3>
+                <div class="card text-center">
+
+                    <br>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group row justify-content-md-center">
+                                <div>
+                                    <img src="../images/folder.png" style="width: 60%;" alt="">
                                 </div>
+                            </div>
                         </div>
+                        <div class="col-md-6">
+                            <div class="form-group row">
 
+                                <div class="container" style="width: 60%;">
+                                    <div class="card-body">
+                                        <button type="button" class="btn btn-success btn-icon-text btn-block">
+                                            <i class="fa-solid fa-download"></i>
+                                            Create New Formats
+                                        </button>
+                                    </div>
 
-                        </form>
+                                    <br>
 
+                                    <div class="card-body">
+
+                                        <button type="button" class="btn btn-warning btn-icon-text btn-block">
+                                            <i class="fa-solid fa-download"></i>
+                                            Define Static Fields
+                                        </button>
+                                    </div>
+
+                                    <br>
+
+                                    <div class="card-body">
+
+                                        <button type="button" class="btn btn-primary btn-icon-text btn-block">
+                                            <i class="fa-solid fa-download"></i>
+                                            Define Moving Fields
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
+
+                    <br>
+
+                    <div class="row justify-content-md-center">
+                        <div class="form-group row">
+                            <div class="container p-10">
+                                <button type="button" class="btn btn-danger" data-toggle="modal"
+                                    data-target="#cancelModal">Cancel</button>
+                            </div>
+                        </div>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        <div class="form-group row">
+                            <div class="container p-10">
+                                <button type="button" class="btn btn-success" data-toggle="modal"
+                                    data-target="#submitModal">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modals-->
+
+                    <!-- Cancel -->
+                    <div class="modal fade" id="cancelModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Cancel Record</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Are you sure you want to cancel the creation of the current record?</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-success" data-dismiss="modal"
+                                        onclick="window.location.href='../main.html'">Cancel Creation</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Submit -->
+                    <div class="modal fade" id="submitModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Submit Record</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Are you sure you want to send the current record?</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-success" data-dismiss="modal">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
+
+
+                <br>
 
                 <!-- content-wrapper ends -->
                 <!-- partial:partials/_footer.html -->

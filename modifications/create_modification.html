@@ -265,25 +265,44 @@
                 <div class="col-12 grid-margin">
                     <div class="card">
                         <div class="card-body">
-                            <h4 class="card-title">Create a new apprentice</h4>
+                            <h4 class="card-title">Create Modifications</h4>
                             <form class="form-sample" novalidate>
                                 <p class="card-description">
                                     Please fill in the following information 📝
+                                    <br><br>
                                 </p>
+                                <div class="row ">
+                                    <div class="col-md-9">
+
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="container">
+                                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#cancelModal"">Cancel</button>
+                                        </div>
+                                    </div>
+                                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                    <div class="form-group row">
+                                        <div class="container">
+                                            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#submitModal">Submit</button>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="row">
-                                    <div class="col-md-6">
+                                    <div class="col-md-3">
                                         <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">Identification</label>
+                                            <label class="col-sm-3 col-form-label"></label>
+                                            Identification
                                             <div class="col-sm-9">
                                                 <input type="text" class="form-control" placeholder="CC or TI" />
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-md-3">
                                         <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">ID CCMS</label>
+                                            <label class="col-sm-3 col-form-label"></label>
+                                            Nombre
                                             <div class="col-sm-9">
-                                                <input type="number" class="form-control" placeholder="Number ID"
+                                                <input type="number" class="form-control" placeholder="Complete Name" disabled
                                                     id="idCcms" required />
                                             </div>
                                             <div class="invalid-feedback">
@@ -291,21 +310,61 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group row">
+                                            <label class="col-sm-3 col-form-label"></label>
+                                            Status
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control" placeholder="Status" disabled />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group row">
+                                            <label class="col-sm-3 col-form-label"></label>
+                                            Options
+                                            <div class="col-sm-9">
+
+                                                <select name="Options" class="form-control" id="">
+                                                    <option>Medical disability</option>
+                                                    <option>Maternity licence</option>
+                                                    <option>Paternity leave</option>
+                                                    <option>Extension approved</option>
+                                                    <option>Force majeure or unforeseeable circumstances</option>
+                                                    <option>Business vacation</option>
+                                                    <option>Health emergency Covid19</option>
+                                                    <option>Change of date by SENA request</option>
+                                                    <option>Renounce</option>
+                                                    <option>Retroactive payment</option>
+                                                    <option>Dismissal for just cause</option>
+                                                    <option>Termination by mutual agreement</option>
+                                                    
+                                                </select>
+                                            </div>
+                                            <div class="invalid-feedback">
+                                                Please provide a valid city.
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+                                <hr class="separador">
+
+                                
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">Name</label>
+                                            <label class="col-sm-3 col-form-label">Start Date</label>
                                             <div class="col-sm-9">
-                                                <input type="text" class="form-control" placeholder="Complete name" />
+                                                <input type="date" class="form-control" />
+                                                </select>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">Group</label>
+                                            <label class="col-sm-3 col-form-label">End Date</label>
                                             <div class="col-sm-9">
-                                                <input type="number" class="form-control" placeholder="Number" />
+                                                <input type="date" class="form-control" />
                                             </div>
                                         </div>
                                     </div>
@@ -313,154 +372,19 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">SGVA</label>
+                                            <label class="col-sm-3 col-form-label">Count date</label>
                                             <div class="col-sm-9">
-                                                <select class="form-control">
+                                                <input type="number" class="form-control" disabled/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group row">
+                                            <label class="col-sm-3 col-form-label">This modifications change dates?</label>
+                                            <div class="col-sm-9">
+                                                <select name="isChangeDates" class="form-control" id="">
                                                     <option>Yes</option>
                                                     <option>No</option>
-                                                    <option>Pending</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">CECO</label>
-                                            <div class="col-sm-9">
-                                                <input type="number" class="form-control" placeholder="Number" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">Job Description</label>
-                                            <div class="col-sm-9">
-                                                <input type="text" class="form-control" placeholder="Description" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">Related Position</label>
-                                            <div class="col-sm-9">
-                                                <input type="text" class="form-control" placeholder="Related" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">Payment</label>
-                                            <div class="col-sm-9">
-                                                <input type="number" class="form-control" placeholder="$ SMLV" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">BirthDay</label>
-                                            <div class="col-sm-9">
-                                                <input type="date" class="form-control" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">Address</label>
-                                            <div class="col-sm-9">
-                                                <input type="text" class="form-control" placeholder="Address" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">E-Mail</label>
-                                            <div class="col-sm-9">
-                                                <input type="email" class="form-control" placeholder="E-mail" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">EPS</label>
-                                            <div class="col-sm-9">
-                                                <input type="text" class="form-control" placeholder="EPS" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">City</label>
-                                            <div class="col-sm-9">
-                                                <input type="text" class="form-control" placeholder="City" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">Institutions</label>
-                                            <div class="col-sm-9">
-                                                <input type="text" class="form-control" placeholder="Institutions" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">Specility</label>
-                                            <div class="col-sm-9">
-                                                <input type="text" class="form-control" placeholder="Specility" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">Name Boss</label>
-                                            <div class="col-sm-9">
-                                                <input type="text" class="form-control" placeholder="Direct Boss" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">ID CCMS Boss</label>
-                                            <div class="col-sm-9">
-                                                <input type="number" class="form-control" placeholder=" ID CCMS Boss" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">Category</label>
-                                            <div class="col-sm-9">
-                                                <select class="form-control">
-                                                    <option>Technical</option>
-                                                    <option>Technologist</option>
-                                                    <option>Professional</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">Yielded</label>
-                                            <div class="col-sm-9">
-                                                <select class="form-control">
-                                                    <option>Yes</option>
-                                                    <option>No</option>
-                                                    <option>Studing</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -469,83 +393,32 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">State</label>
+                                            <label class="col-sm-3 col-form-label">New End Date</label>
                                             <div class="col-sm-9">
-                                                <select class="form-control">
-                                                    <option>Lective</option>
-                                                    <option>Productive</option>
-                                                    <option>University</option>
-                                                </select>
+                                                <input type="date" class="form-control" disabled/>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">Contract Start Date</label>
-                                            <div class="col-sm-9">
-                                                <input type="date" class="form-control" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">Contract Start Date</label>
-                                            <div class="col-sm-9">
-                                                <input type="date" class="form-control" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">End Date Of Study</label>
-                                            <div class="col-sm-9">
-                                                <input type="date" class="form-control" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">Productive Start Date</label>
-                                            <div class="col-sm-9">
-                                                <input type="date" class="form-control" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">Productive End Date</label>
-                                            <div class="col-sm-9">
-                                                <input type="date" class="form-control" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">Count Days</label>
-                                            <div class="col-sm-9">
-                                                <input type="number" class="form-control" disabled />
-                                            </div>
+                                        <div class="form-group row justify-content-md-center">
+                                            <button type="button" class="btn btn-primary btn-icon-text">
+                                                <i class="fa-solid fa-download"></i>
+                                                 Production Contracts Creation Report
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="row ">
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <div class="container p-10">
-                                                <button type="button" class="btn btn-danger">Cancel</button>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="row justify-content-md-center">
                                     <div class="form-group row">
                                         <div class="container p-10">
-                                            <button type="submit" class="btn btn-success">Submit</button>
+                                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#cancelModal">Cancel</button>
+                                        </div>
+                                    </div>
+                                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                    <div class="form-group row">
+                                        <div class="container p-10">
+                                            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#submitModal">Submit</button>
                                         </div>
                                     </div>
                                 </div>
@@ -553,6 +426,51 @@
 
 
                         </form>
+
+                        <!-- Modals-->
+
+                        <!-- Cancel -->
+                        <div class="modal fade" id="cancelModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Cancel Record</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  <p>Are you sure you want to cancel the creation of the current record?</p>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-success" data-dismiss="modal" onclick="window.location.href='../main.html'">Cancel Creation</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- Submit -->
+                          <div class="modal fade" id="submitModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Submit Record</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  <p>Are you sure you want to send the current record?</p>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-success" data-dismiss="modal">Submit</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
 
                     </div>
                 </div>
