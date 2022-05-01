@@ -1,13 +1,26 @@
-# Aquí pondré la documentación de cómo manejar mi proyecto
+# Bienvenidos a la Pantilla Front-End del proyecto Adonix
 
-## Por qué existe?
+## Resumen 📕
+El presente repositorio es la plantilla front-end sobre el proyecto educativo Adonix, cuenta con las siguientes tecnoloias: HTML, CSS, JavaScript y Gestores de CSS como BootStrap.
+
+## Requisitos 🔍
+- Git
+- Navegador (Recomendado Chrome)
+
+## Cómo descargarlo 📦
+- Ir al terminal y ejecutar los siguientes comandos:
+
+```
+mkdir front_end_adonix
+cd front_end_adonix
+git clone https://github.com/paoscript/Front-End_Adonix.git
+```
+
+## Cómo Ejecutarlo ✅
+
+- Ir a la carpeta principal del proyecto y abrir el archivo ```main.html```
 
 
-## Cómo descargarlo
 
 
-## Cómo Ejecutarlo
-
-### Sin Live Server
-
-### Con Live Server 
+En caso de terner dudas por favor ponerce en contacto.
