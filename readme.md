@@ -1,4 +1,4 @@
-# Bienvenidos a la Desarrollo Front-End del proyecto Adonix
+# Bienvenidos a mi Desarrollo Front-End del proyecto Adonix
 
 ## Resumen 📕
 El presente repositorio es la plantilla front-end sobre el proyecto educativo Adonix, cuenta con las siguientes tecnologias: HTML, CSS, JavaScript y Gestores de CSS como BootStrap.
