@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Create A New Institutions
+    <title>Create Modifications
     </title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="../vendors/feather/feather.css">
@@ -262,29 +262,53 @@
 
             <div class="main-panel">
                 <!-- Formulario -->
+                <br>
+<div class="container">
+    <div class="alert alert-danger" role="alert">
+        El aprendiz ya cuenta con X compromisos de mejora! <a class="alert-link" href="">Ver Compromisos</a>
+      </div>
+</div>
                 <div class="col-12 grid-margin">
                     <div class="card">
                         <div class="card-body">
-                            <h4 class="card-title">Create a new Institutions</h4>
+                            <h4 class="card-title">Create Feedbacks</h4>
                             <form class="form-sample" novalidate>
                                 <p class="card-description">
                                     Please fill in the following information 📝
+                                    <br><br>
                                 </p>
+                                <div class="row ">
+                                    <div class="col-md-9">
 
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="container">
+                                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#cancelModal"">Cancel</button>
+                                        </div>
+                                    </div>
+                                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                    <div class="form-group row">
+                                        <div class="container">
+                                            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#submitModal">Submit</button>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="row">
-                                    <div class="col-md-6">
+                                    <div class="col-md-3">
                                         <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">Nit</label>
+                                            <label class="col-sm-3 col-form-label"></label>
+                                            Identification
                                             <div class="col-sm-9">
-                                                <input type="text" class="form-control" placeholder="Nit" />
+                                                <input type="text" class="form-control" placeholder="CC or TI" />
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-md-3">
                                         <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">Name of Institution</label>
+                                            <label class="col-sm-3 col-form-label"></label>
+                                            Nombre
                                             <div class="col-sm-9">
-                                                <input type="text" class="form-control" placeholder="Name of Institution"
+                                                <input type="number" class="form-control" placeholder="Complete Name" disabled
                                                     id="idCcms" required />
                                             </div>
                                             <div class="invalid-feedback">
@@ -292,58 +316,124 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group row">
+                                            <label class="col-sm-3 col-form-label"></label>
+                                            Status
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control" placeholder="Status" disabled />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group row">
+                                            <label class="col-sm-3 col-form-label"></label>
+                                            Absence
+                                            <div class="col-sm-9">
+
+                                                <select name="Options" class="form-control" id="">
+                                                    <option>Small Fault</option>
+                                                    <option>Serious Misconduct</option>
+                                                    <option>Very Serious Fault</option>
+
+                                                </select>
+                                            </div>
+                                            <div class="invalid-feedback">
+                                                Please provide a valid city.
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+                                <hr class="separador">
+
+                                <br>
+
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">Complete Address</label>
+                                            <label class="col-sm-3 col-form-label">Attach Evidence</label>
                                             <div class="col-sm-9">
-                                                <input type="text" class="form-control" placeholder="Complete Address" />
+                                                <div class="card-body">
+                                                    <button type="button" class="btn btn-warning btn-icon-text" data-toggle="modal" data-target="#attachEvidence">
+                                                        <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                                        Attach Evidence
+                                                    </button>
+                                                </div>
+                                                <div class="modal fade" id="attachEvidence" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                      <div class="modal-content">
+                                                        <div class="modal-header">
+                                                          <h5 class="modal-title" id="exampleModalLabel">Attach Evidence</h5>
+                                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                          </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                          <p>Select the file for upload new Update Upload</p>
+                                                          <input type="file">
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                                          <button type="button" class="btn btn-success" data-dismiss="modal">Save changes</button>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">Number Telephone</label>
+                                            <label class="col-sm-3 col-form-label">Status Fault</label>
                                             <div class="col-sm-9">
-                                                <input type="number" class="form-control" placeholder="Number Telephone" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">City</label>
-                                            <div class="col-sm-9">
-                                                <input type="number" class="form-control" placeholder="City" />
+                                                <select name="Options" class="form-control" id="">
+                                                    <option>Open</option>
+                                                    <option>Closed</option>
+                                                    <option>Pending</option>
                                                 </select>
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                                <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group row">
-                                            <Email class="col-sm-3 col-form-label">Email</Email>
+                                            <label class="col-sm-3 col-form-label">Observations</label>
                                             <div class="col-sm-9">
-                                                <input type="email" class="form-control" placeholder="Email" />
+                                                <textarea name="" id="" cols="30" rows="10" class="form-control" disabled ></textarea>
                                             </div>
                                         </div>
                                     </div>
-                                
-                        </div>
-                        <div class="row justify-content-md-center">
-                            <div class="form-group row">
-                                <div class="container p-10">
-                                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#cancelModal">Cancel</button>
+                                    <div class="col-md-6">
+                                        <div class="form-group row">
+                                            <label class="col-sm-3 col-form-label">Responsible</label>
+                                            <div class="col-sm-9">
+                                                <select name="WhichAnalyst" class="form-control" id="">
+                                                    <option>Analyts 1</option>
+                                                    <option>Analyts 2</option>
+                                                    <option>Analyts 3</option>
+                                                    <option>Analyts 4</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                            <div class="form-group row">
-                                <div class="container p-10">
-                                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#submitModal">Submit</button>
+
+                                <div class="row justify-content-md-center">
+                                    <div class="form-group row">
+                                        <div class="container p-10">
+                                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#cancelModal">Cancel</button>
+                                        </div>
+                                    </div>
+                                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                    <div class="form-group row">
+                                        <div class="container p-10">
+                                            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#submitModal">Submit</button>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
                         </div>
+
 
                         </form>
 
@@ -390,6 +480,7 @@
                               </div>
                             </div>
                           </div>
+
 
                     </div>
                 </div>
